@@ -1,0 +1,14 @@
+body {
+    background-image: url("https://wallpaperaccess.com/full/5818315.png");
+    background-size: 375px 812px;
+}
+p {
+    font-size: 40px;
+}
+#imgBox {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    height: 275px;
+    width: 275px;
+}
