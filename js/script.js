@@ -25,6 +25,24 @@ function handleGetData(event){
       );
 }
 
+function handleGetDataNext(event){
+    event.preventDefault();
+    console.log("Evo Form Submitted")
+    $.ajax({
+        url: `https://pokeapi.co/api/v2/pokemon/${input.val()}`
+    }).then(
+        function(data){
+            console.log(data);
+            pokeInfo = data;
+            render();
+            $input.val("")
+        },
+        function(error){
+            console.log('bad request', error);
+        }
+    );
+}
+
 function render(){
     $pokeName.text(pokeInfo.name);
     $pokeAbility1.text(pokeInfo.abilities[0].ability.name)

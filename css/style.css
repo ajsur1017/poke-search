@@ -2,13 +2,58 @@ body {
     background-image: url("https://wallpaperaccess.com/full/5818315.png");
     background-size: 375px 812px;
 }
-p {
-    font-size: 40px;
+#form {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00000063;
+    padding: 8px;
+    border-radius: 100px;
+    margin: 10px 4px 5px 4px;
 }
-#imgBox {
+#name {
+    font-size: 24px;
     display: flex;
     justify-content: center;
-    margin-left: 50px;
+    margin: 130px 50px 20px 50px;
+    background-color: #00000015;
+    padding: 8px;
+    border-radius: 100px;
+    
+
+}
+#ability1 {
+    display: flex;
+    justify-content: center;
+    margin: -15px 70px 0px 70px;
+    background-color: #00000015;
+    border-radius: 100%;
+}
+#ability2 {
+    display: flex;
+    justify-content: center;
+    margin: 1px 70px 20px 70px;
+    background-color: #00000015;
+    border-radius: 100%;
+}
+#pokeImg {
+    display: flex;
+    justify-content: center;
+    margin: auto;
     height: 275px;
     width: 275px;
+    margin-bottom: 160px;
 }
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 50px;
+    width: 300px;
+    background-color: #00000063;
+    padding: 8px;
+    border-radius: 10px;
+    margin: auto;
+
+    
+}
+
