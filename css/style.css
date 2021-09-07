@@ -62,4 +62,56 @@ footer {
         background-image: url("https://2.bp.blogspot.com/-L3T1V7HgWVE/WGsvTGfCSTI/AAAAAAAATEY/Zdd3jRrxlSkx7lGN45KfdDdvvPRD_EqTQCLcB/s1600/Pokemon%2BWallpapers%2B7.jpg");
         background-size: 1600px 900px
      }
+     #form {
+        display: flex;
+        justify-content: space-around;
+        background-color: #00000063;
+        padding: 8px;
+        border-radius: 100px;
+        margin: 10px 850px 5px 450px;
+    }
+    #name {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        margin: 130px 950px 20px 550px;
+        background-color: #00000015;
+        padding: 8px;
+        border-radius: 100px;
+        
+    
+    }
+    #ability1 {
+        display: flex;
+        justify-content: center;
+        margin: -15px 1000px 0px 600px;
+        background-color: #00000015;
+        border-radius: 100%;
+    }
+    #ability2 {
+        display: flex;
+        justify-content: center;
+        margin: 1px 1000px 20px 600px;
+        background-color: #00000015;
+        border-radius: 100%;
+    }
+    #pokeImg {
+        display: flex;
+        justify-content: center;
+        margin-left: 640px;
+        height: 275px;
+        width: 275px;
+        margin-bottom: 100px;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: 30px;
+        width: 100px;
+        background-color: #00000063;
+        padding: 8px;
+        border-radius: 10px;
+        margin-left: 720px; 
+    }
  }
