@@ -1,6 +1,9 @@
 body {
     background-image: url("https://wallpaperaccess.com/full/5818315.png");
     background-size: 375px 812px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    
 }
 #form {
     display: flex;
@@ -52,8 +55,11 @@ footer {
     background-color: #00000063;
     padding: 8px;
     border-radius: 10px;
-    margin: auto;
-
-    
+    margin: auto;   
 }
-
+ @media only screen and (min-width: 425px) {
+     body {
+        background-image: url("https://2.bp.blogspot.com/-L3T1V7HgWVE/WGsvTGfCSTI/AAAAAAAATEY/Zdd3jRrxlSkx7lGN45KfdDdvvPRD_EqTQCLcB/s1600/Pokemon%2BWallpapers%2B7.jpg");
+        background-size: 1600px 900px
+     }
+ }
