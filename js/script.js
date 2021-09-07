@@ -56,10 +56,5 @@ function render(){
 }
 
 $('#form').on('submit', handleGetData)
-$('#form').on('touchstart click', handleGetData)
-$('#next').on('click', handleGetDataNext)
 
-container.addEventListener('touchstart', () => {});
-container.addEventListener('touchend', () => {});
-container.addEventListener('touchcancel', () => {});
-container.addEventListener('touchmove', () => {});
+$('#next').on('click', handleGetDataNext)
