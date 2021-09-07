@@ -45,10 +45,10 @@ body {
 }
 footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 50px;
-    width: 300px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 30px;
+    width: 100px;
     background-color: #00000063;
     padding: 8px;
     border-radius: 10px;

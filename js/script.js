@@ -7,8 +7,11 @@ const $pokeAbility1 = $('#pokeAbility1');
 const $pokeAbility2 = $('#pokeAbility2');
 const $pokeImg = $('#pokeImg');
 
+const randomNum = (num) => {
+    return Math.floor(Math.random() * num)
+}
+
 function handleGetData(event){
-    console.log(event)
     event.preventDefault();
     console.log("Form Submitted")
     $.ajax({
@@ -29,6 +32,18 @@ function handleGetData(event){
 function handleGetDataNext(event){
     event.preventDefault();
     console.log("Next Submitted")
+    $.ajax({
+        url: `https://pokeapi.co/api/v2/pokemon/${randomNum(600)}`
+    }).then(
+        function(data){
+            console.log(data);
+            pokeInfo = data;
+            render()
+        },
+        function(error){
+            console.log('bad request', error);
+        }
+    );
 
  
 }
@@ -41,3 +56,4 @@ function render(){
 }
 
 $('#form').on('submit', handleGetData)
+$('#next').on('click', handleGetDataNext)
