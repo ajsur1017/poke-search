@@ -98,10 +98,10 @@ footer {
     #pokeImg {
         display: flex;
         justify-content: center;
-        margin-left: 640px;
-        height: 275px;
-        width: 275px;
-        margin-bottom: 100px;
+        margin-left: 560px;
+        height: 400px;
+        width: 400px;
+        margin-bottom: 50px;
     }
     footer {
         display: grid;
