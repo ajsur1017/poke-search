@@ -8,6 +8,7 @@ const $pokeAbility2 = $('#pokeAbility2');
 const $pokeImg = $('#pokeImg');
 
 function handleGetData(event){
+    console.log(event)
     event.preventDefault();
     console.log("Form Submitted")
     $.ajax({
@@ -27,20 +28,9 @@ function handleGetData(event){
 
 function handleGetDataNext(event){
     event.preventDefault();
-    console.log("Evo Form Submitted")
-    $.ajax({
-        url: `https://pokeapi.co/api/v2/pokemon/${input.val()}`
-    }).then(
-        function(data){
-            console.log(data);
-            pokeInfo = data;
-            render();
-            $input.val("")
-        },
-        function(error){
-            console.log('bad request', error);
-        }
-    );
+    console.log("Next Submitted")
+
+ 
 }
 
 function render(){
