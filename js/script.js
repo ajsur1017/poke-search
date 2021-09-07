@@ -56,4 +56,5 @@ function render(){
 }
 
 $('#form').on('submit', handleGetData)
+$('#form').on('return', handleGetData)
 $('#next').on('click', handleGetDataNext)
